@@ -351,18 +351,46 @@ transition: 0,5s;
 }
 /* *** CONTACT *** */
 #contact {
-    background-color: var(--gray-200);
+    background-color: var(--gray-100);
     /* max width*/
-    /* margin 0 auto */
+    margin: 0 auto; 
+    padding: 1rem;
 }
 
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+form a {
+    /*float: right;*/
+    display: inline-block;
+    background-color: var(--dark-primary);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color, 2s;
+}
+form a:hover{
+    background-color: rgb(16, 106, 4);
+}
 
 /* *** FOOTER *** */
 footer{
     background-color: var(--dark-primary);
     color: white;
     flex: space-between;
+    padding: 1rem;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 
 @media (min-width: 576px) { 
  .portfolio article{
