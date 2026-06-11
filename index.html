@@ -9,12 +9,13 @@
     </head>
     <body>
 
-        <header>
+        <header id="home">
             <nav id="main-nav" class="navigation">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact">Contacts</a>
+                <i class="fa-solid fa-circle-half-stroke" class="themeSwitch" onclick="themeSwitch()"></i>
             </nav>
             <button class="hamburger closed" type="button" id="hamburger">
             <!-- <i class="fa-solid fa-bars"></i> -->
@@ -41,7 +42,7 @@
                 </div>
             </section>
 
-            <aside>
+            <aside id="about">
                 <article>
                     <h2>About me</h2>
                     <p>I’m passionate about technology and love coding. I’m always looking for new ways to turn my ideas into reality through code and innovation.</p>
@@ -96,7 +97,7 @@
                 </article>
             </aside>
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2>My Portfolio</h2>
                 <div class="projects-container">
                     <article>
@@ -185,15 +186,10 @@
                 </div>
             </section>
         </main>
-        <section id="contact">
-            <form>
-                <p>if you want to contact me use this button</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0SQ4XsAcZy-ZSXwIqip1cwgXaQc-Voe7eYqBeAjyCiEhJiA/viewform?usp=dialog" target="#"><span>Contact me</span></a>
-            </form>
-        </section>
-        <footer>
+        <footer id="contact">
             <p>Contacts:</p>
             <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0SQ4XsAcZy-ZSXwIqip1cwgXaQc-Voe7eYqBeAjyCiEhJiA/viewform?usp=dialog" target="#"><span>form</span></a>
                 <a href="mailto:den.deufemia@gmail.com?subject=Contatto%20dal%20portfolio&body=Buongiorno%20Dennis%2C%0A%0AVolevo%20parlarti%20di...">Mail me</a>
                 <a href="https://github.com/Dede-999">github</a>
                 <a href="https://www.linkedin.com/in/dennis-deufemia-38a979377/">linkedin</a>

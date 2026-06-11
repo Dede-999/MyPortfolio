@@ -6,7 +6,9 @@
     --medium-primary: #193a48;
     --light-primary: #316a83;
 
-    --gray-100: #cecece;
+    --bodyColor: #cecece;
+    --textColor: rgb(0, 0, 0);
+    --cardColor: white;
     --gray-200: #d7d8da;
 }
 
@@ -29,10 +31,11 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   }
 
 article {
-    background-color: white;
+    background-color: var(--cardColor);
     border-radius: 1.2rem;
     padding: 1rem;
     position: relative;
+    color: var(--textColor);
 }
 
 
@@ -138,7 +141,7 @@ main{
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr; /*copia in compito*/
-    background-color: var(--gray-100);
+    background-color: var(--bodyColor);
     row-gap: 1rem;
 }
 
@@ -240,9 +243,9 @@ aside article h2 {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #000;
+    color: var(--textColor);
     background: 
-        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        radial-gradient(closest-side, var(--cardColor) 79%, transparent 80% 100%),
         conic-gradient(var(--light-primary) var(--value), rgb(102,178,255) var(--value));
     position: relative;
 }
@@ -292,6 +295,7 @@ h3 {
 /* *** PORTFOLIO *** */
 .portfolio h2{
     text-align: center;
+    color:var(--textColor);
 }
 .portfolio article{
     position:relative;
@@ -367,35 +371,6 @@ transition: 0,5s;
     color: white;
     background-color: red;
     padding: 0.4rem 4rem;
-}
-/* *** CONTACT *** */
-#contact {
-    background-color: var(--gray-100);
-    /* max width*/
-    margin: 0 auto; 
-    padding: 1rem;
-}
-
-form {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  
-}
-
-form a {
-    /*float: right;*/
-    display: inline-block;
-    background-color: var(--dark-primary);
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: background-color, 2s;
-}
-form a:hover{
-    background-color: rgb(16, 106, 4);
 }
 
 /* *** FOOTER *** */
