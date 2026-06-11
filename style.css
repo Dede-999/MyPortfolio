@@ -10,6 +10,16 @@
     --gray-200: #d7d8da;
 }
 
+
+#theme-toggle {
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 html{
     font-family: 'roboto', sans-serif;
 }
@@ -195,6 +205,7 @@ aside article h2 {
 .skills ul{
     display: inline;
 }
+
 .skills li {
     display: flex;
     align-items: center;
@@ -212,30 +223,37 @@ aside article h2 {
 
 .bar-container {
     flex-basis: 70%;
-    background-color: var(--gray-200);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     margin: 0.4rem 0;
 }
 
 .bar {
-    background-color: var(--light-primary);
-    text-align: right;
-    color: white;
-    padding: 0 0.2rem;
+    --value: calc(var(--percent) * 1%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(var(--light-primary) var(--value), rgb(102,178,255) var(--value));
+    position: relative;
 }
 
-.html-skills {
-    width: 80%;
+
+.bar span {
+    position: absolute;
+    font-size: 1rem;
 }
 
-.css-skills {
-    width: 70%;
-}
 
-.js-skills {
-    width: 75%;
-}
 /*
 meter {
     height: 0.8rem;
@@ -408,8 +426,9 @@ footer a {
     /* width: calc(50% - 0.6rem); */
     width: calc((100% - 0.6rem) / 2);
  }
+
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
     .navigation{
     position: relative;
     width: auto;
