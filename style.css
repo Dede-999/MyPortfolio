@@ -236,8 +236,8 @@ aside article h2 {
 
 .bar {
     --value: calc(var(--percent) * 1%);
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -248,6 +248,7 @@ aside article h2 {
         radial-gradient(closest-side, var(--cardColor) 79%, transparent 80% 100%),
         conic-gradient(var(--light-primary) var(--value), rgb(102,178,255) var(--value));
     position: relative;
+    margin: 0.4rem 0.4rem;
 }
 
 
@@ -401,8 +402,12 @@ footer a {
     /* width: calc(50% - 0.6rem); */
     width: calc((100% - 0.6rem) / 2);
  }
-
+    .bar{
+        width: 5rem;
+        height: 5rem;
+    }
 }
+
 @media (min-width: 768px) { 
     .navigation{
     position: relative;
@@ -430,6 +435,15 @@ footer a {
     .hero-container {
         justify-content: flex-start;
     }
+
+    .bar{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .bar span{
+        font-size: 0.7rem;
+    }
     
 }
 
@@ -442,4 +456,5 @@ footer a {
         display: none;
     }
 
-    }
+    
+}
